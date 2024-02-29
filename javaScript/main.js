@@ -41,8 +41,8 @@ const loadData = async (sortView) => {
       ${name}
       </h2>
       <div class="card-actions justify-between items-center">
-      <div class="badge badge-outline p-4">${published_in}</div>
-      <div> <button class="btn btnId rounded-full border text-orange-500">-></button></div>
+      <div class="badge badge-outline p-4 text-emerald-400">${published_in}</div>
+      <div> <button class="btn btnId rounded-full border text-orange-500"><i class="fa-solid fa-angles-right"></i></button></div>
       
       </div>
       </div>
@@ -130,11 +130,11 @@ const loadData = async (sortView) => {
       </div>
       <div class="w-1/2 text-center">
             <div class="relative">
-            <img class="w-full min-w-[440px] h-full rounded-md" src=${
+            <img class="w-full min-w-[440px] h-full max-h-[250px] rounded-md" src=${
               modalContent?.image_link?.[0] || "No image Available"
             } alt="">
 
-            <div id="accDiv" class="absolute top-2 right-1 bg-[#EB5757] px-4 py-1 text-center rounded-xl">
+            <div id="accDiv" class="absolute top-2 right-1 bg-emerald-400  px-4 py-1 text-center rounded-xl">
              
             </div>
             </div>
