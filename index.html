@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ai Hub</title>
+
+    <!-- daisy-link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
+    <header class="lg:mx-16 mx-5 my-4 lg:my-10 flex justify-between items-center">
+      <h2 class="text-red-400 font-bold text-2xl"> <span class=" text-blue-500">AI</span> UNIVERSE <span class=" text-yellow-400">HUB</span></h2>
+      <div>
+        <button id="sortBtn" class="btn bg-red-300 text-white">Sort by date</button>
+      </div>
+    </header>
+    <main class="lg:mx-16 mx-5 my-4 lg:my-10">
+
+      <section class=" ">
+        <!-- card-section -->
+        <div
+          id="cardDiv"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
+        ></div>
+      </section>
+
+      <div class="my-5 text-center">
+        <button id="showBtn" onclick="handleShow()" class="btn bg-red-500 text-white">See more....</button>
+        <button id="hideBtn" onclick="handleHide()" class="btn bg-red-500 text-white">See less....</button>
+      </div>
+      <!-- modal-section -->
+      <div
+        id="myModal"
+        class="fixed hidden z-50 left-0 top-0 w-full h-screen bg-[#00000066]"
+      >
+        <div class="relative  mt-[6%] h-screen w-auto">
+          <span
+          class="close absolute -top-3 lg:right-[9.5%] right-0 cursor-pointer rounded-full px-4 py-2 bg-red-500 text-white text-2xl flex justify-center items-center"
+          >&times;</span
+        >
+        <div
+          id="modalBody"
+          class="bg-[#fefefe] p-5 border border-[#888] rounded-lg lg:w-[80%] h-auto mx-auto overflow-auto"
+        >
+          <!-- <div class="flex justify-center items-center gap-4 p-10 ">
+           
+          </div> -->
+        </div>
+        </div>
+      </div>
+    </main>
+    <script src="javaScript/main.js"></script>
+  </body>
+</html>
